@@ -6,4 +6,59 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Appointment\Commands\Add\" />
+    <Folder Include="Features\Appointment\Commands\Delete\" />
+    <Folder Include="Features\Appointment\Commands\Update\" />
+    <Folder Include="Features\Appointment\Constants\" />
+    <Folder Include="Features\Appointment\Profiles\" />
+    <Folder Include="Features\Appointment\Queries\GetAll\" />
+    <Folder Include="Features\Appointment\Queries\GetById\" />
+    <Folder Include="Features\Appointment\Rules\" />
+    <Folder Include="Features\Appointment\Validations\" />
+    <Folder Include="Features\Branch\Commands\Add\" />
+    <Folder Include="Features\Branch\Commands\Delete\" />
+    <Folder Include="Features\Branch\Commands\Update\" />
+    <Folder Include="Features\Branch\Constants\" />
+    <Folder Include="Features\Branch\Profiles\" />
+    <Folder Include="Features\Branch\Queries\GetAll\" />
+    <Folder Include="Features\Branch\Queries\GetById\" />
+    <Folder Include="Features\Branch\Rules\" />
+    <Folder Include="Features\Branch\Validations\" />
+    <Folder Include="Features\Doctors\Commands\Add\" />
+    <Folder Include="Features\Doctors\Commands\Delete\" />
+    <Folder Include="Features\Doctors\Commands\Update\" />
+    <Folder Include="Features\Doctors\Constants\" />
+    <Folder Include="Features\Doctors\Queries\GetAll\" />
+    <Folder Include="Features\Doctors\Queries\GetById\" />
+    <Folder Include="Features\Doctors\Validations\" />
+    <Folder Include="Features\Doctors\Rules\" />
+    <Folder Include="Features\Doctors\Profiles\" />
+    <Folder Include="Features\Feedback\" />
+    <Folder Include="Features\Patients\" />
+    <Folder Include="Features\Reports\Commands\Add\" />
+    <Folder Include="Features\Reports\Commands\Delete\" />
+    <Folder Include="Features\Reports\Commands\Update\" />
+    <Folder Include="Features\Reports\Constants\" />
+    <Folder Include="Features\Reports\Profiles\" />
+    <Folder Include="Features\Reports\Queries\GetAll\" />
+    <Folder Include="Features\Reports\Queries\GetById\" />
+    <Folder Include="Features\Reports\Rules\" />
+    <Folder Include="Features\Reports\Validations\" />
+    <Folder Include="Features\Titles\Commands\Add\" />
+    <Folder Include="Features\Titles\Commands\Delete\" />
+    <Folder Include="Features\Titles\Commands\Update\" />
+    <Folder Include="Features\Titles\Constants\" />
+    <Folder Include="Features\Titles\Profiles\" />
+    <Folder Include="Features\Titles\Queries\GetAll\" />
+    <Folder Include="Features\Titles\Queries\GetById\" />
+    <Folder Include="Features\Titles\Rules\" />
+    <Folder Include="Features\Titles\Validations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
 </Project>
