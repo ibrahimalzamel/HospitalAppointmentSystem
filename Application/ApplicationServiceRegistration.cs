@@ -1,4 +1,8 @@
-﻿using Core.Application.Rules;
+﻿using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Caching;
+using Core.Application.Pipelines.Transaction;
+using Core.Application.Pipelines.Validation;
+using Core.Application.Rules;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -16,11 +20,11 @@ namespace Application
             //MediatR
             services.AddMediatR(config => {
                 config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-                //config.AddOpenBehavior(typeof(AuthorizationBehavior<,>));
-                //config.AddOpenBehavior(typeof(CachingBehavior<,>));
-                //config.AddOpenBehavior(typeof(CacheRemovingBehavior<,>));
-                //config.AddOpenBehavior(typeof(ValidationBehavior<,>));
-                //config.AddOpenBehavior(typeof(TransactionScopeBehavior<,>));
+                config.AddOpenBehavior(typeof(AuthorizationBehavior<,>));
+                config.AddOpenBehavior(typeof(CachingBehavior<,>));
+                config.AddOpenBehavior(typeof(CacheRemovingBehavior<,>));
+                config.AddOpenBehavior(typeof(ValidationBehavior<,>));
+                config.AddOpenBehavior(typeof(TransactionScopeBehavior<,>));
             });
             //Rules
             services.AddSubClassesOfType(Assembly.GetExecutingAssembly(), typeof(BaseBusinessRules));

@@ -16,15 +16,6 @@
     <Folder Include="Features\Appointment\Queries\GetById\" />
     <Folder Include="Features\Appointment\Rules\" />
     <Folder Include="Features\Appointment\Validations\" />
-    <Folder Include="Features\Branch\Commands\Add\" />
-    <Folder Include="Features\Branch\Commands\Delete\" />
-    <Folder Include="Features\Branch\Commands\Update\" />
-    <Folder Include="Features\Branch\Constants\" />
-    <Folder Include="Features\Branch\Profiles\" />
-    <Folder Include="Features\Branch\Queries\GetAll\" />
-    <Folder Include="Features\Branch\Queries\GetById\" />
-    <Folder Include="Features\Branch\Rules\" />
-    <Folder Include="Features\Branch\Validations\" />
     <Folder Include="Features\Doctors\Commands\Add\" />
     <Folder Include="Features\Doctors\Commands\Delete\" />
     <Folder Include="Features\Doctors\Commands\Update\" />
