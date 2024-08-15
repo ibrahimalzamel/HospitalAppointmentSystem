@@ -7,15 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Appointment\Commands\Add\" />
-    <Folder Include="Features\Appointment\Commands\Delete\" />
-    <Folder Include="Features\Appointment\Commands\Update\" />
-    <Folder Include="Features\Appointment\Constants\" />
-    <Folder Include="Features\Appointment\Profiles\" />
-    <Folder Include="Features\Appointment\Queries\GetAll\" />
-    <Folder Include="Features\Appointment\Queries\GetById\" />
-    <Folder Include="Features\Appointment\Rules\" />
-    <Folder Include="Features\Appointment\Validations\" />
+    <Folder Include="Features\Appointments\Constants\" />
     <Folder Include="Features\Doctors\Commands\Add\" />
     <Folder Include="Features\Doctors\Commands\Delete\" />
     <Folder Include="Features\Doctors\Commands\Update\" />

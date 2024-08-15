@@ -1,9 +1,11 @@
 ﻿using Application.Repositories;
+using Application.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Contexts;
 using Persistence.Repositories;
+using Persistence.Services;
 
 namespace Persistence
 {
@@ -19,7 +21,7 @@ namespace Persistence
             });
 
             //IoC Inversion Of Control
-           // services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             services.AddScoped<IUserRepository, UserRepository>();
 
@@ -27,7 +29,7 @@ namespace Persistence
             services.AddScoped<ITitleRepository, TitleRepository>();
 
             services.AddScoped<IPatientRepository, PatientRepository>();
-           // services.AddScoped<IPatientService, PatientService>();
+            services.AddScoped<IPatientService, PatientService>();
 
             services.AddScoped<IDoctorRepository, DoctorRepository>();
             services.AddScoped<IBranchRepository, BranchRepository>();
@@ -39,10 +41,10 @@ namespace Persistence
            // services.AddScoped<IUserService, UserService>();
 
             services.AddScoped<IAppointmentIntervalRepository, AppointmentIntervalRepository>();
-         //   services.AddScoped<IAppointmentIntervalService, AppointmentIntervalService>();
+            services.AddScoped<IAppointmentIntervalService, AppointmentIntervalService>();
 
             services.AddScoped<IAppointmentRepository, AppointmentRepository>();
-           // services.AddScoped<IAppointmentService, AppointmentService>();
+            services.AddScoped<IAppointmentService, AppointmentService>();
 
             services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 
